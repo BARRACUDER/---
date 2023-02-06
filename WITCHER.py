@@ -1,0 +1,12 @@
+money=int(input())
+ans=0
+ans+=money//25
+money%=25
+ans+=money//10
+money%=10
+ans+=money//5
+money%=5
+ans+=money//2
+money%=2
+ans+=money
+print(ans)
