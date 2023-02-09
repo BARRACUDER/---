@@ -99,6 +99,8 @@ while win==0 and 0 in field:
                 count_x = 0
                 count_O = 0
 out_field(field,field_size)
+if win==0:
+    print("Ничья")
 if count_O==win_size:
     print("O-WINS")
 else:
