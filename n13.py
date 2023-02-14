@@ -1,0 +1,13 @@
+f=open("INPUT.txt","w+")
+f.read()
+print(f)
+s,p=map(int,input().split())
+D=s**2-4*p
+if(D<0):
+    print("ERROR")
+else:
+    x21=(-s+D**0.5)/-2
+    x22=(-s-D**0.5)/-2
+    x2=max(x21,x22)
+    x1=s-x2
+    print(int(min(x1,x2)),int(max(x1,x2)))
