@@ -3,7 +3,7 @@ from telebot import types
 from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton, \
     InlineKeyboardMarkup, InlineKeyboardButton
-token='5894468261:AAEtj7hqzV049eww6XhgNx9pbSeCZ2Pp_jU'
+token='Напиши сюда ТОКЕН'
 bot=telebot.TeleBot(token)
 button_hi = KeyboardButton('Привет! 👋')
 
@@ -30,7 +30,7 @@ def func(message):
         bot.send_message(message.chat.id, "пока нет")
     elif message.text=="наш сайт":
         sitekb=types.InlineKeyboardMarkup()
-        st_kb=types.InlineKeyboardButton(text='мегасайт',url='http://olympia.ga')
+        st_kb=types.InlineKeyboardButton(text='мегасайт',url='а сюда мегасайт')
         sitekb.add(st_kb)
         bot.send_message(message.chat.id,'наш сайт',reply_markup=sitekb)
 
